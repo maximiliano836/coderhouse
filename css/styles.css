@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +7,25 @@
     list-style-type: none;
 }
 
-nav{
-    background-color: #d7ace4;
-    margin-top: 3rem;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-footer{
+nav {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: #d7ace4;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+footer {
     background-color: #d7ace4;
     color: azure;
     text-align: center;
@@ -22,43 +35,107 @@ a {
     text-decoration: none;
 }
 
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.lista_nav img {
-    width: 10rem;
-    margin: -2rem 2rem;
+
+.inicio_principal {
+    background-image: url(../img/fondo_principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem; 
+    position: relative;
+}
+
+.texto_principal img h1{
+    margin-top: 5rem;
+}
+.texto_principal h1{
+    margin-top: 5rem;
+}
+.texto_principal button {
+    margin: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #a554a4; 
+    color: azure; 
+    border-radius: 1rem;
+}
+
+button:hover {
+    background-color: #cf7fe7;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #7b3292;
+    transform: scale(0.95);
+}
+
+.texto_principal h2{
+    margin-top: 10rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_principal img {
+    max-width: 4rem;
+    margin: .5rem;
+    display: block;
+}
+
+.lista_nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 
 .lista_nav li {
-    font-size: 2rem;
-}
-.logos_redes img{
-    max-width: 2rem;
-}
-
-.enlace_nav{
-    margin: 2rem;
-}
-
-.enlace_nav a{
+    font-size: 1.5rem;
     color: azure;
 }
+
+.logos_redes img {
+    max-width: 1rem;
+}
+
+.lista_nav a {
+    color: azure;
+}
+
 
 .enlace_footer{
     margin: 1rem;
 }
 
-main{
-    text-align: center;
-    margin: 1rem;
+.enlace_footer img{
+    max-width: 2rem;
 }
 
-#servicios{
-    color: #d7ace4;
-}
 
-.servicios li{
-    color: #ffffff;
-    margin: 1.5rem;
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
 }
 
 .servicios h2{
@@ -73,31 +150,34 @@ main{
     font-size: 1.2rem;
 }
 
-.info_personal h2{
-    color: #ffffff;
-    text-shadow: 2px 2px 4px #d7ace4;
-    margin: 2rem;
+.info_personal{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 5rem;
+    gap: 1rem;
 }
 
-.info_personal p{
-    color: #ffffff;
-
-    text-shadow: 2px 2px 4px #d7ace4;
-    font-size: 1.2rem;
-    margin-top: 20rem;
-    text-shadow: 2px 2px 4px #d7ace4;
-
-}
-
-.texto_personal{
-    background-image: url("../img/foto_vale.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.info_personal img{
+    width: 100%;
+    height: auto;
     border-radius: 7rem;
 }
 
-.francesa{
+.texto_personal h2{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #d7ace4;
+    margin-bottom: 2rem;
+}
+
+.texto_personal p{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #d7ace4;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px #d7ace4;
+
+}
+
+.esmaltado{
     background-image: url("../img/imagen1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,7 +185,7 @@ main{
     border-radius: 7rem;
 }
 
-.gel{
+.kapping{
     background-image: url("../img/imagen2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +193,7 @@ main{
     border-radius: 7rem;
 }
 
-.acrilica{
+.esculpidas{
     background-image: url("../img/imagen3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +201,7 @@ main{
     border-radius: 7rem;
 }
 
-.procelana{
+.soft_gel{
     background-image: url("../img/imagen4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,13 +209,6 @@ main{
     border-radius: 7rem;
 }
 
-.seda{
-    background-image: url("../img/imagen5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 7rem;
-}
 
 .contacto{
     color: #d7ace4;
