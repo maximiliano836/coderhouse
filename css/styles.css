@@ -26,12 +26,22 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: #d7ace4;
+    border-style:groove;
 }
 
 footer {
     background-color: #d7ace4;
     color: azure;
     text-align: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 0;
 }
 
 a {
@@ -94,13 +104,6 @@ main {
     margin-top: 10rem;
 }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo_principal img {
     max-width: 4rem;
     margin: .5rem;
@@ -157,10 +160,17 @@ main {
 }
 
 .info_personal{
+    background-image: url(../img/fondo_principal.png);
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin-top: 5rem;
+    grid-template-columns: 1fr 2fr;
     gap: 1rem;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.info_personal img{
+    box-shadow: 10px 10px 20px #d7ace4;
 }
 
 .info_personal img{
@@ -176,7 +186,7 @@ main {
 }
 
 .texto_personal p{
-    color: #ffffff;
+    color: #212020;
     text-shadow: 2px 2px 4px #d7ace4;
     font-size: 1.2rem;
 
@@ -199,6 +209,7 @@ main {
 
 iframe{
     border-radius: 2rem;
+    box-shadow: 10px 10px 20px #d7ace4;
 }
 
 .tarjeta_productos img{
@@ -229,6 +240,10 @@ iframe{
     margin-left: 1rem;
 }
 
+#list-item-1 img, #list-item-2 img, #list-item-3 img, #list-item-4 img{
+    box-shadow: 10px 10px 20px #d7ace4;
+}
+
 .agenda, .contacto{
     margin-top: 5rem;
     padding: 2rem;
@@ -249,20 +264,33 @@ iframe{
 }
 
 .contacto{
-    display: flex;
-    align-items: top;
-    justify-content: space-around;
-    padding: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+
 }
 
 .contacto ul{
     border-radius: 3rem;
+    max-width: 20rem;
+}
+
+.horarios{
+    box-shadow: 10px 10px 20px #d7ace4;
+}
+.contacto_redes{
+    padding: 0;
 }
 
 .contacto_redes img{
     max-width: 4rem;
     padding: .5rem;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.414);
     border-radius: 1rem;
-    
+    box-shadow: 10px 10px 20px #d7ace4;
+
+}
+
+.contenedor_info_prinicipal{
+    justify-items: center;
 }
