@@ -15,23 +15,36 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo_principal"> 
+            <a href="index.html" class="logo_principal"> 
                 <img src="../img/logo.png" alt="Logo principal"> 
             </a>
-            <ul class="lista_nav">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/tienda_online.html">Tienda Online</a>
-                </li>
-                <li>
-                    <a href="../pages/contactanos.html">Contactanos</a>
-                </li> 
-                <li>
-                    <a href="../pages/sobre_mi.html">Agenda Turno</a>
-                </li>
-            </ul>
+            <div class="d-none d-sm-block">
+                <ul class="lista_nav">
+                    <li>
+                        <a href="../pages/tienda_online.html">Tienda Online</a>
+                    </li>
+                    <li>
+                        <a href="../pages/agenda.html">Agenda Turno</a>
+                    </li> 
+                    <li>
+                        <a href="../pages/contactanos.html">Contactanos</a>
+                    </li>
+                    <li>
+                        <a href="../pages/sobre_mi.html">Sobre Mi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown d-sm-none">
+                <a class="btn boton_desplegable dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menú 💅
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../pages/tienda_online.html">Tienda Online</a></li>
+                    <li><a class="dropdown-item" href="../pages/agenda.html">Agenda Turno</a></li>
+                    <li><a class="dropdown-item" href="../pages/contactanos.html">Contactanos</a></li>
+                    <li><a class="dropdown-item" href="../pages/sobre_mi.html">Sobre Mi</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>

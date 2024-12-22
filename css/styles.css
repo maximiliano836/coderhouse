@@ -58,12 +58,6 @@ main {
     justify-content: center;
 }
 
-@media (max-width: 575px) {
-    nav{
-        justify-items:end;
-    }
-}
-
 .inicio_principal {
     background-image: url(../img/fondo_principal.png);
     background-repeat: no-repeat;
@@ -367,3 +361,15 @@ iframe{
 }
 
 
+@media (max-width: 575px) {
+    nav{
+        justify-items:end;
+    }
+    .texto_principal img{
+        max-width: 70%;
+        height: auto;
+    }
+    #servicios{
+        padding: 2rem;
+    }
+}
