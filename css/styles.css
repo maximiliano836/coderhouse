@@ -58,6 +58,11 @@ main {
     justify-content: center;
 }
 
+iframe{
+    border-radius: 2rem;
+    box-shadow: 10px 10px 20px #d7ace4;
+}
+
 .inicio_principal {
     background-image: url(../img/fondo_principal.png);
     background-repeat: no-repeat;
@@ -79,6 +84,8 @@ main {
 
 }
 .texto_principal img {
+    max-width: 90%;
+    height: auto;
     border-radius: 14rem;
     box-shadow: 10px 10px 20px #d7ace4;
 }
@@ -169,36 +176,55 @@ main {
 }
 
 .info_personal{
-    background-image: url(../img/fondo_principal.png);
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
     width: 100%;
-    margin-top: 5rem;
-    padding: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-image: url(../img/fondo_principal.png);
+    align-items: center;
 }
 
 .info_personal img{
     box-shadow: 10px 10px 20px #d7ace4;
-}
-
-.info_personal img{
+    min-width: 20vh;
+    min-height: 25vh;
     width: 100%;
-    height: auto;
     border-radius: 7rem;
+    margin-top: 1rem;
 }
 
-.texto_personal h2{
-    color: #212020;
+.info_personal p{
     text-shadow: 2px 2px 4px #d7ace4;
-    margin-bottom: 2rem;
+    box-shadow: 10px 10px 20px #d7ace4;
+    background-color: #dfefd4fd;
+    padding: .3rem;
+    border-radius: .5rem;
 }
 
-.texto_personal p{
-    color: #212020;
+.accordion-body{
+    background-color:  #dfefd4fd;
+}
+
+.accordion-body img{
+    box-shadow: 10px 10px 20px #d7ace4;
+}
+
+.accordion-body p{
     text-shadow: 2px 2px 4px #d7ace4;
-    font-size: 1.2rem;
-    max-width: 50rem;
+}
+
+.accordion-button{
+    background-color: #cf7fe7;
+}
+
+.parte_inferior{
+    grid-column: 1/3;
+}
+
+.parte_superior{
+    margin-top: 2rem;
 }
 
 
@@ -214,11 +240,6 @@ main {
     object-fit: cover;
     margin-bottom: 5rem;
     text-shadow: 2px 2px 4px #d7ace4;
-}
-
-iframe{
-    border-radius: 2rem;
-    box-shadow: 10px 10px 20px #d7ace4;
 }
 
 
@@ -251,13 +272,25 @@ iframe{
     box-shadow: 10px 10px 20px #d7ace4;
 }
 
+.agenda{
+    display: grid;
+    justify-content: center;
+}
+
+.agenda iframe{
+    width: 90vw;
+    height: 70vh;
+    background-color: #eee2f2;
+
+}
+
 .agenda, .contacto, .productos{
     margin-top: 5rem;
     padding: 2rem;
     background-image: url(../img/fondo_principal.png);
 }
 
-.agenda iframe , .contacto iframe{
+.contacto iframe{
     width: 50rem;
     height: 39rem;
     background-color: #eee2f2;
@@ -373,3 +406,4 @@ iframe{
         padding: 2rem;
     }
 }
+
