@@ -20,7 +20,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 5fr;
     background-color: #d7ace4;
-    position: fixed;
+    position:fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -157,7 +157,6 @@ iframe{
 
 #servicios {
     background-color: #e0aaf14b;
-    padding: 6vh;
 }
 
 
@@ -169,7 +168,7 @@ iframe{
 
 .servicios p{
     margin: 2vh;
-    font-size: 1.2vh;
+    font-size: 2vh;
 }
 
 .sobre_mi{
