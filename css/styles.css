@@ -5,8 +5,6 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     list-style-type: none;
-    scroll-padding-top: 5rem;
-    word-wrap: break-word;
     text-shadow: 2px 2px 4px #d7ace4;
 }
 
@@ -55,33 +53,39 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-iframe{
-    border-radius: 2rem;
-    box-shadow: 10px 10px 20px #d7ace4;
-}
-
-.inicio_principal {
     background-image: url(../img/fondo_principal.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 5rem);
+}
+
+iframe{
+    border-radius: 2vh;
+    box-shadow: 10px 10px 20px #d7ace4;
+}
+
+.inicio_principal {
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 5rem; 
+    margin-top: 5vh; 
     position: relative;
 }
 
-.texto_principal img h1{
-    margin-top: 5rem;
-    box-shadow: 10px 10px 20px #d7ace4;
-
+.texto_principal{
+    height: 95vh;
+    display: grid;
+    grid-template-rows: 5fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
+.texto_principal img{
+    box-shadow: 10px 10px 20px #d7ace4;
+}
+
 .texto_principal img {
     max-width: 90%;
     height: auto;
@@ -89,12 +93,10 @@ iframe{
     box-shadow: 10px 10px 20px #d7ace4;
 }
 
-.texto_principal h1{
-    margin-top: 5rem;
-}
+
 .boton_agenda {
-    margin: .5rem;
-    padding: .5rem;
+    margin: .5vh;
+    padding: .5vh;
     font-family: 'Times New Roman', Times, serif;
     border: none;
     cursor: pointer;
@@ -102,7 +104,7 @@ iframe{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #a554a4; 
     color: azure; 
-    border-radius: 1rem;
+    border-radius: 1vh;
 }
 
 .texto_principal button:hover {
@@ -116,29 +118,26 @@ iframe{
 }
 
 .texto_principal h2{
-    margin-top: 10rem;
+    margin-top: 10vh;
 }
 
 .logo_principal img {
-    max-width: 4rem;
-    margin: .5rem;
+    max-width: 6vh;
+    margin: .5vh;
     display: block;
 }
 
 .lista_nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    margin-top: .5rem;
-}
-
-.lista_nav li {
-    font-size: 1.4rem;
+    margin-top: .5vh;
+    font-size: 2.5vh;
     color: azure;
 }
 
+
 .logos_redes img {
-    max-width: 1rem;
+    max-width: 1vh;
 }
 
 .lista_nav a {
@@ -148,48 +147,48 @@ iframe{
 
 
 .enlace_footer{
-    margin: 1rem;
+    margin: 1vh;
 }
 
 .enlace_footer img{
-    max-width: 2rem;
+    max-width: 2vh;
 }
 
 
 #servicios {
-    background-color: #e0aaf18e;
-    padding: 6rem;
+    background-color: #e0aaf14b;
+    padding: 6vh;
 }
 
 
 .servicios h2{
-    margin-bottom: 5rem;
+    margin-bottom: 5vh;
     
 }
 
 
 .servicios p{
-    margin: 2rem;
-    font-size: 1.2rem;
+    margin: 2vh;
+    font-size: 1.2vh;
 }
 
 .sobre_mi{
     display: grid;
-    margin-top: 5rem;
+    margin-top: 5vh;
     background-image: url(../img/fondo_principal.png);
 }
 
 .sobre_mi h2{
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 2vh;
 }
 
 .info_personal{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 1rem;
+    gap: 1vh;
     width: 100%;
-    padding: 1rem;
+    padding: 1vh;
     padding-top: 0;
     align-items: center;
 }
@@ -199,15 +198,15 @@ iframe{
     min-width: 20vh;
     min-height: 25vh;
     width: 100%;
-    border-radius: 7rem;
-    margin-top: 1rem;
+    border-radius: 7vh;
+    margin-top: 1vh;
 }
 
 .info_personal p{
     box-shadow: 10px 10px 20px #d7ace4;
     background-color: #dfefd4fd;
-    padding: .3rem;
-    border-radius: .5rem;
+    padding: .3vh;
+    border-radius: .5vh;
 }
 
 
@@ -228,7 +227,7 @@ iframe{
 }
 
 .parte_superior{
-    margin-top: 2rem;
+    margin-top: 2vh;
 }
 
 .imagenes_servicios{
@@ -237,11 +236,11 @@ iframe{
     background-position: center;
     width: 100%;
     height: auto;
-    border-radius: 7rem;
-    max-height: 25rem;
-    max-width: 35rem;
+    border-radius: 7vh;
+    max-height: 25vh;
+    max-width: 35vh;
     object-fit: cover;
-    margin-bottom: 5rem;
+    margin-bottom: 5vh;
 }
 
 
@@ -252,7 +251,7 @@ iframe{
 
 .list-group {
     position: sticky;
-    top: 15rem;
+    top: 15vh;
     align-self: flex-start;
 }
 
@@ -264,10 +263,10 @@ iframe{
 
 #list-item-1, #list-item-2, #list-item-3, #list-item-4{
     background-color: #dfefd4fd;
-    border-radius: 2rem;
-    padding: .5rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    border-radius: 2vh;
+    padding: .5vh;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
 }
 
 #list-item-1 img, #list-item-2 img, #list-item-3 img, #list-item-4 img{
@@ -287,21 +286,21 @@ iframe{
 }
 
 .agenda, .contacto, .productos{
-    margin-top: 5rem;
-    padding: 2rem;
+    margin-top: 5vh;
+    padding: 2vh;
     background-image: url(../img/fondo_principal.png);
 }
 
 .contacto iframe{
-    width: 50rem;
-    height: 39rem;
+    width: 50vh;
+    height: 39vh;
     background-color: #eee2f2;
 }
 
 .agenda h2, .contacto h2, .productos h2{
-    padding-top: 2rem;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    padding-top: 2vh;
+    font-size: 2vh;
+    margin-bottom: 1vh;
 }
 
 .contacto{
@@ -312,8 +311,8 @@ iframe{
 }
 
 .contacto ul{
-    border-radius: 3rem;
-    max-width: 20rem;
+    border-radius: 3vh;
+    max-width: 20vh;
 }
 
 .horarios{
@@ -324,10 +323,10 @@ iframe{
 }
 
 .contacto_redes img{
-    max-width: 4rem;
-    padding: .5rem;
+    max-width: 4vh;
+    padding: .5vh;
     background-color: rgba(240, 248, 255, 0.414);
-    border-radius: 1rem;
+    border-radius: 1vh;
     box-shadow: 10px 10px 20px #d7ace4;
 
 }
@@ -341,39 +340,39 @@ iframe{
 }
 
 .productos h2{
-    margin-bottom: 2rem;
+    margin-bottom: 2vh;
 }
 
 .tarjeta_productos img{
-    max-width: 20rem;
+    max-width: 20vh;
 }
 
 .info_productos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3rem;
+    margin: 3vh;
     align-items: center;
     box-shadow: 10px 10px 20px #d7ace4;
     height: 100%; 
-    padding: 1rem;
+    padding: 1vh;
     transition: 0.5s;
 }
 
 .info_productos img {
-    margin-bottom: 1rem;
+    margin-bottom: 1vh;
     align-self: center;
 }
 
 .info_productos button {
     width: 100%;
     justify-content: end;
-    padding: .5rem;
-    border-radius: 1rem;
+    padding: .5vh;
+    border-radius: 1vh;
     transition: 0.5s;
     color: #212020;
     
-    font-size: 1.2rem;
+    font-size: 1.2vh;
 }
 
 .info_productos:hover {
@@ -404,7 +403,7 @@ iframe{
         height: auto;
     }
     #servicios{
-        padding: 2rem;
+        padding: 2vh;
     }
 }
 
@@ -414,8 +413,8 @@ iframe{
         justify-items: center;
     }
     .info_personal img{
-        max-width: 25rem;
-        max-height: 35rem;
+        max-width: 25vh;
+        max-height: 35vh;
     }
     .sobre_mi{
         height: 85vh;
