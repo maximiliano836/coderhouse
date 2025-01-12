@@ -40,8 +40,13 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     margin-bottom: 0;
+}
+
+footer p{
+    margin-bottom: 0;
+    
 }
 
 a {
@@ -157,12 +162,8 @@ iframe{
 
 #servicios {
     background-color: #e0aaf14b;
-}
-
-
-.servicios h2{
-    margin-bottom: 5vh;
-    
+    padding-top: 10vh;
+    border-radius: 10px;
 }
 
 
@@ -173,38 +174,33 @@ iframe{
 
 .sobre_mi{
     display: grid;
+    height: 95vh;
     margin-top: 5vh;
-    background-image: url(../img/fondo_principal.png);
-}
-
-.sobre_mi h2{
-    text-align: center;
-    padding-top: 2vh;
 }
 
 .info_personal{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1vh;
-    width: 100%;
-    padding: 1vh;
-    padding-top: 0;
-    align-items: center;
+    width: 90vw;
+    align-content: center;
+    justify-content: center;
 }
 
 .info_personal img{
     box-shadow: 10px 10px 20px #d7ace4;
     min-width: 20vh;
     min-height: 25vh;
-    width: 100%;
+    max-height: 75vh;
     border-radius: 7vh;
     margin-top: 1vh;
+    margin-left: 3vw;
 }
 
 .info_personal p{
     box-shadow: 10px 10px 20px #d7ace4;
     background-color: #dfefd4fd;
-    padding: .3vh;
+    padding: 1vh;
     border-radius: .5vh;
 }
 
@@ -236,8 +232,8 @@ iframe{
     width: 100%;
     height: auto;
     border-radius: 7vh;
-    max-height: 25vh;
-    max-width: 35vh;
+    max-height: 50vh;
+    max-width: 40vh;
     object-fit: cover;
     margin-bottom: 5vh;
 }
@@ -263,9 +259,9 @@ iframe{
 #list-item-1, #list-item-2, #list-item-3, #list-item-4{
     background-color: #dfefd4fd;
     border-radius: 2vh;
-    padding: .5vh;
-    margin-bottom: 1vh;
-    margin-left: 1vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 
 #list-item-1 img, #list-item-2 img, #list-item-3 img, #list-item-4 img{
@@ -275,43 +271,53 @@ iframe{
 .agenda{
     display: grid;
     justify-content: center;
+    margin-top: 5vh;
+    background-image: url(../img/fondo_principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 91vh;
 }
 
 .agenda iframe{
-    width: 90vw;
-    height: 70vh;
+    width: 80vw;
+    height: 80vh;
     background-color: #eee2f2;
-
 }
 
 .agenda, .contacto, .productos{
-    margin-top: 5vh;
-    padding: 2vh;
-    background-image: url(../img/fondo_principal.png);
+    padding: 1vh;
 }
 
 .contacto iframe{
-    width: 50vh;
     height: 39vh;
     background-color: #eee2f2;
 }
 
-.agenda h2, .contacto h2, .productos h2{
+.agenda h2, .contacto h2, .productos h2, .sobre_mi h2{
     padding-top: 2vh;
-    font-size: 2vh;
-    margin-bottom: 1vh;
+    font-size: 4vh;
+    text-align: center;
 }
 
 .contacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
 
+.columna{
+    flex: 1;
+    justify-items: center;
+    align-content: center;
+}
+
+.columna h2{
+    margin-bottom: 5vh;
 }
 
 .contacto ul{
     border-radius: 3vh;
-    max-width: 20vh;
 }
 
 .horarios{
@@ -327,19 +333,24 @@ iframe{
     background-color: rgba(240, 248, 255, 0.414);
     border-radius: 1vh;
     box-shadow: 10px 10px 20px #d7ace4;
-
-}
-
-.contenedor_info_prinicipal{
-    justify-items: center;
 }
 
 .productos{
-    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .productos h2{
+    margin-bottom: 5vh;
+}
+
+.productos h3{
     margin-bottom: 2vh;
+}
+
+.tarjeta_productos{
+    justify-content: center;
 }
 
 .tarjeta_productos img{
@@ -370,8 +381,7 @@ iframe{
     border-radius: 1vh;
     transition: 0.5s;
     color: #212020;
-    
-    font-size: 1.2vh;
+    font-size: 1.7vh;
 }
 
 .info_productos:hover {
@@ -404,6 +414,70 @@ iframe{
     #servicios{
         padding: 2vh;
     }
+
+    .info_personal img{
+        margin-left: 1vw;
+    }
+
+    .info_personal{
+        width: 100vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+
+    .sobre_mi{
+        height: auto;
+        margin-top: 7vh;
+        margin-bottom: 2vh;
+        justify-content: center;
+    }
+
+    .agenda{
+        justify-items: center;
+    }
+
+    .agenda iframe{
+        max-height: 70vh;
+    }
+
+    .agenda h2{
+        padding-top: 6vh;
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        justify-content: center;
+        margin-top: 5vh;
+        padding: 1vh;
+    }
+
+    .contacto iframe{
+        max-width: 90vw;
+    }
+
+    .contacto h2{
+        font-size: 6vw;
+    }
+
+    .contacto_redes img{
+        min-width: 10vw;
+    }
+
+    .productos{
+        margin-top: 1vh;
+        padding-top: 5vh;
+    }
+
+    .info_productos{
+        margin: 0;
+        margin-bottom: 2vh;
+    }
+
+    .tarjeta_productos{
+        padding: 3vw;
+    }
 }
 
 @media (min-width: 576px) {
@@ -411,10 +485,11 @@ iframe{
         align-items: start;
         justify-items: center;
     }
-    .info_personal img{
-        max-width: 25vh;
-        max-height: 35vh;
+
+    .info_personal p{
+        margin-top: 8vh;
     }
+
     .sobre_mi{
         height: 85vh;
     }
