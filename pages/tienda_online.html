@@ -10,6 +10,7 @@
     <meta name="author" content="Zichi Nails Salon">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,16 +51,16 @@
 
     <main>
         <div class="container text-center productos">
-            <h2>🛒 Productos en Venta 🛍</h2>
+            <h2 data-aos="fade-down"data-aos-duration="2000">🛒 Productos en Venta 🛍</h2>
             <div class="tarjeta_productos row">
-                <div class="col-12 col-sm-5 card info_productos">
+                <div class="col-12 col-sm-5 card info_productos" data-aos="fade-up"data-aos-duration="2000">
                     <img src="../img/productos/esmalte.jpeg" alt="Esmalte">
                     <h3>Base Coat Pink</h3>
                     <p>Base Coat Pink Mask Gel Color</p>
                     <p class="precio">$19.99</p>
                     <button>Comprar</button>
                 </div>
-                <div class="col-12 col-sm-5 card info_productos">
+                <div class="col-12 col-sm-5 card info_productos" data-aos="fade-up"data-aos-duration="3000">
                     <img src="../img/productos/lampra.png" alt="Lampara">
                     <h3>Lampara De Uñas Uv</h3>
                     <p>Secador Uñas Con Pantalla De 120w Led Uv 36 Luces Esmalte De Gel Secado De Uñas Luz De Uñas Para Esmalte De Gel Con 4 Tiempos Lámpara De Curado Portatil Super Rápida</p>
@@ -84,5 +85,7 @@
         </ul>
     </footer>
     <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

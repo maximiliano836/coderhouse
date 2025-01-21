@@ -10,6 +10,7 @@
     <meta name="author" content="Zichi Nails Salon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,10 +53,12 @@
         <section class="seccion_principal">
             <div class="inicio_principal">
                 <div class="texto_principal">
-                    <img src="./img/logo.png" alt="Logo Principal">
-                    <h1>✨ Realzando la belleza de tus uñas ✨</h1>
-                    <a href="pages/agenda.html"><button class="boton_agenda">Agenda tu Turno!</button></a>
-                    <h2>💅 Conoce nuestros servicios 💅</h2>
+                    <img data-aos="fade-down"data-aos-duration="2000" src="./img/logo.png" alt="Logo Principal">
+                    <div data-aos="fade-up"data-aos-duration="2000">
+                        <h1>✨ Realzando la belleza de tus uñas ✨</h1>
+                        <a href="pages/agenda.html"><button class="boton_agenda">Agenda tu Turno!</button></a>
+                    </div>
+                    <h2 data-aos="fade-up"data-aos-duration="2000">💅 Conoce nuestros servicios 💅</h2>
                     <a href="#servicios">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
@@ -67,7 +70,7 @@
         </section>
         <section id="servicios">
             <div class="container text-center">
-                <div class="accordion d-sm-none" id="accordionExample">
+                <div class="accordion d-sm-none" id="accordionExample" data-aos="fade-up"data-aos-duration="2000">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -123,7 +126,7 @@
                 </div>
                 <div class="servicios d-none d-sm-block">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-3" data-aos="fade-up"data-aos-duration="2000">
                             <div id="list-example" class="list-group">
                               <a class="list-group-item list-group-item-action" href="#list-item-1">Esmaltado Semipermanente</a>
                               <a class="list-group-item list-group-item-action" href="#list-item-2">Kapping de Polygel</a>
@@ -132,22 +135,22 @@
                             </div>
                           </div>
                           <div class="col-8 info_servicios">
-                              <div class="container" id="list-item-1">
+                              <div class="container" id="list-item-1" data-aos="fade-up"data-aos-duration="2000">
                                 <h2>Esmaltado Semipermanente</h2>
                                 <p>El esmaltado semipermanente es una técnica de manicura que consiste en aplicar un esmalte específico y secarlo con una lámpara LED o UV para lograr un acabado reluciente y duradero. Se recomienda realizarlo cada 2 o 3 semanas, dependiendo del crecimiento de la uña.</p>
                                 <img src="img/imagen1.jpg" alt="Imagen esmaltado" class="imagenes_servicios">
                               </div>
-                              <div class="container" id="list-item-2">
+                              <div class="container" id="list-item-2" data-aos="fade-up"data-aos-duration="2000">
                                 <h2>Kapping de Polygel</h2>
                                 <p>El esmaltado semipermanente es una técnica de manicura que consiste en aplicar un esmalte específico y secarlo con una lámpara LED o UV para lograr un acabado reluciente y duradero. Se recomienda realizarlo cada 2 o 3 semanas, dependiendo del crecimiento de la uña.</p>
                                 <img src="img/imagen2.jpg" alt="Imagen esmaltado" class="imagenes_servicios">
                               </div>
-                              <div class="container" id="list-item-3">
+                              <div class="container" id="list-item-3" data-aos="fade-up"data-aos-duration="2000">
                                 <h2>Esculpidas en Polygel</h2>
                                 <p>Las uñas esculpidas en Polygel son extensiones de uñas artificiales que se realizan con una mezcla de polvo acrílico y gel. Este material combina lo mejor de los sistemas de construcción de uñas acrílicos y de gel, resultando en uñas ligeras, fuertes y flexibles.</p>
                                 <img  src="img/imagen3.jpg" alt="Imagen esmaltado" class="imagenes_servicios">
                               </div>
-                              <div class="container" id="list-item-4">
+                              <div class="container" id="list-item-4" data-aos="fade-up"data-aos-duration="2000">
                                 <h2>Soft Gel</h2>
                                 <p>Las uñas soft gel son un sistema de extensiones de uñas que consiste en tips de gel suave que se adhieren a la uña natural. Se trata de una técnica de manicura que ofrece un acabado natural y duradero, y que se caracteriza por ser ligera y flexible.</p>
                                 <img src="img/imagen4.jpg" alt="Imagen esmaltado" class="imagenes_servicios">
@@ -175,5 +178,7 @@
     </footer>
 
     <script src="css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
