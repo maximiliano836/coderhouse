@@ -32,7 +32,7 @@ main {
         max-width: 90%;
         height: auto;
         border-radius: 14rem;
-        box-shadow: 10px 10px 20px #d7ace4;
+        box-shadow: 10px 10px 20px $primary-color;
     }
 
     h1 {
@@ -62,8 +62,8 @@ main {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #a554a4;
-    color: azure;
+    background-color: $button-color;
+    color: $texto-color;
     border-radius: 1vh;
 }
 
@@ -83,7 +83,7 @@ main {
 
 
 #servicios {
-    background-color: #e0aaf14b;
+    background-color: $secundary-color;
     padding-top: 10vh;
     border-radius: 10px;
 }
@@ -110,7 +110,7 @@ main {
     justify-content: center;
 
     img {
-        box-shadow: 10px 10px 20px #d7ace4;
+        box-shadow: 10px 10px 20px $primary-color;
         min-width: 20vh;
         min-height: 25vh;
         max-height: 75vh;
@@ -120,18 +120,18 @@ main {
     }
 
     p {
-        box-shadow: 10px 10px 20px #d7ace4;
-        background-color: #dfefd4fd;
+        box-shadow: 10px 10px 20px $primary-color;
+        background-color: $background-color;
         padding: 1vh;
         border-radius: .5vh;
     }
 }
 
 .accordion-body {
-    background-color: #dfefd4fd;
+    background-color: $background-color;
 
     img {
-        box-shadow: 10px 10px 20px #d7ace4;
+        box-shadow: 10px 10px 20px $primary-color;
     }
 }
 
@@ -170,20 +170,20 @@ main {
     align-self: flex-start;
 
     a:hover {
-        background-color: #d7ace4;
-        color: white;
+        background-color: $primary-color;
+        color: $texto-color;
     }
 }
 
 #list-item-1, #list-item-2, #list-item-3, #list-item-4 {
-    background-color: #dfefd4fd;
+    background-color: $background-color;
     border-radius: 2vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
     margin-bottom: 2vh;
 
     img {
-        box-shadow: 10px 10px 20px #d7ace4;
+        box-shadow: 10px 10px 20px $primary-color;
     }
 }
 
@@ -200,7 +200,7 @@ main {
     iframe {
         width: 80vw;
         height: 80vh;
-        background-color: #eee2f2;
+        background-color: $iframe-color;
     }
 }
 
@@ -215,7 +215,7 @@ main {
 
     iframe {
         height: 39vh;
-        background-color: #eee2f2;
+        background-color: $iframe-color;
     }
 
     h2 {
@@ -240,7 +240,7 @@ main {
 }
 
 .horarios {
-    box-shadow: 10px 10px 20px #d7ace4;
+    box-shadow: 10px 10px 20px $primary-color;
 }
 
 .contacto_redes {
@@ -251,7 +251,7 @@ main {
         padding: .5vh;
         background-color: rgba(240, 248, 255, 0.414);
         border-radius: 1vh;
-        box-shadow: 10px 10px 20px #d7ace4;
+        box-shadow: 10px 10px 20px $primary-color;
     }
 }
 
@@ -283,7 +283,7 @@ main {
     justify-content: space-between;
     margin: 3vh;
     align-items: center;
-    box-shadow: 10px 10px 20px #d7ace4;
+    box-shadow: 10px 10px 20px $primary-color;
     height: 100%;
     padding: 1vh;
     transition: 0.5s;

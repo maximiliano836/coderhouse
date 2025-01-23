@@ -1,12 +1,12 @@
 nav {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    background-color: #d7ace4;
+    background-color: $primary-color;
     position:fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: #d7ace4;
+    border-bottom: $primary-color;
     align-items: center;
     height: 7vh;
 }
@@ -17,10 +17,10 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 1vh;
     font-size: 2.5vh;
-    color: azure;
+    color: $texto-color;
 
     a {
-        color: azure;
+        color: $texto-color;
         text-decoration: none;
     }
 }

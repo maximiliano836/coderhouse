@@ -4,7 +4,7 @@ a {
 
 iframe {
   border-radius: 2vh;
-  box-shadow: 10px 10px 20px #d7ace4;
+  box-shadow: 10px 10px 20px rgba(223, 239, 212, 0.9921568627);
 }
 
 @media (max-width: 575px) {
@@ -289,7 +289,7 @@ main {
 }
 .list-group a:hover {
   background-color: #d7ace4;
-  color: white;
+  color: azure;
 }
 
 #list-item-1, #list-item-2, #list-item-3, #list-item-4 {
