@@ -1,0 +1,80 @@
+@media (max-width: 575px) {
+    nav {
+        justify-items: end;
+    }
+    .texto_principal {
+        img {
+            max-width: 70%;
+            height: auto;
+        }
+    }
+    #servicios {
+        padding: 2vh;
+    }
+    .info_personal {
+        img {
+            margin-left: 1vw;
+        }
+        width: 100vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+    .sobre_mi {
+        height: auto;
+        margin-top: 7vh;
+        margin-bottom: 2vh;
+        justify-content: center;
+    }
+    .agenda {
+        justify-items: center;
+        iframe {
+            max-height: 70vh;
+        }
+        h2 {
+            padding-top: 6vh;
+        }
+    }
+    .contacto {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        justify-content: center;
+        margin-top: 5vh;
+        padding: 1vh;
+        iframe {
+            max-width: 90vw;
+        }
+        h2 {
+            font-size: 6vw;
+        }
+    }
+    .contacto_redes {
+        img {
+            min-width: 10vw;
+        }
+    }
+    .productos {
+        margin-top: 1vh;
+        padding-top: 5vh;
+    }
+    .info_productos {
+        margin: 0;
+        margin-bottom: 2vh;
+    }
+    .tarjeta_productos {
+        padding: 3vw;
+    }
+}
+
+@media (min-width: 576px) {
+    .info_personal {
+        align-items: start;
+        justify-items: center;
+        p {
+            margin-top: 8vh;
+        }
+    }
+    .sobre_mi {
+        height: 85vh;
+    }
+}

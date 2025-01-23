@@ -4,3 +4,14 @@
 @import "../scss/components/_footer";
 @import "../scss/components/_header";
 @import "../scss/components/_main";
+@import "../scss/components/_body";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    text-shadow: 2px 2px 4px #d7ace4;
+}

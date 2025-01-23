@@ -1,0 +1,27 @@
+footer {
+    background-color: #d7ace4;
+    color: azure;
+    text-align: center;
+    border-bottom: #d7ace4;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
+.enlace_footer {
+    margin: 1vh;
+
+    img {
+        max-width: 2vh;
+    }
+}
