@@ -26,7 +26,7 @@ nav {
     z-index: 1000;
     border-bottom: #d7ace4;
     align-items: center;
-    justify-items:auto;
+    height: 7vh;
 }
 
 footer {
@@ -81,14 +81,12 @@ iframe{
 }
 
 .texto_principal{
-    height: 95vh;
+    height: 94vh;
     display: grid;
     grid-template-rows: 5fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-}
-.texto_principal img{
-    box-shadow: 10px 10px 20px #d7ace4;
+    padding-top: 4vh;
 }
 
 .texto_principal img {
@@ -122,20 +120,24 @@ iframe{
     transform: scale(0.95);
 }
 
+.texto_principal h1{
+    padding-top: 4vh;
+}
+
 .texto_principal h2{
-    margin-top: 10vh;
+    padding-top: 10vh;
 }
 
 .logo_principal img {
     max-width: 6vh;
-    margin: .5vh;
+    margin-left: .5vh;
     display: block;
 }
 
 .lista_nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: .5vh;
+    margin-top: 1vh;
     font-size: 2.5vh;
     color: azure;
 }
