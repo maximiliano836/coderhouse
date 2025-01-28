@@ -34,27 +34,14 @@
             padding-top: 6vh;
         }
     }
-    .contacto {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        align-content: center;
-        justify-content: center;
-        margin-top: 5vh;
-        padding: 1vh;
-        iframe {
-            max-width: 90vw;
-        }
-        h2 {
-            font-size: 6vw;
-        }
-    }
+
     .contacto_redes {
         img {
             min-width: 10vw;
         }
     }
     .productos {
-        margin-top: 1vh;
+        margin-top: 7vh;
         padding-top: 5vh;
     }
     .info_productos {
@@ -66,15 +53,34 @@
     }
 }
 
+@media (max-width: 850px) {
+    .contacto {
+        grid-template-columns: 2fr;
+        align-content: center;
+        justify-content: center;
+        margin-top: 5vh;
+        width: 100%;
+        iframe {
+            max-width: 90vw;
+        }
+        h2 {
+            font-size: clamp(1.5rem, 2vw, 2vw);
+            padding-top: 5vh;
+        }
+    }
+}
+
 @media (min-width: 576px) {
     .info_personal {
         align-items: start;
         justify-items: center;
-        p {
-            margin-top: 8vh;
-        }
     }
     .sobre_mi {
         height: 85vh;
+    }
+
+    .productos {
+        margin-top: 7vh;
+        padding-top: 5vh;
     }
 }
