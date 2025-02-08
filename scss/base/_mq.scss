@@ -21,7 +21,7 @@
     }
     .sobre_mi {
         height: auto;
-        margin-top: 7vh;
+        margin-top: 10vh;
         margin-bottom: 2vh;
         justify-content: center;
     }
@@ -31,7 +31,7 @@
             max-height: 70vh;
         }
         h2 {
-            padding-top: 6vh;
+            padding-bottom: 4vh;
         }
     }
 
@@ -50,6 +50,20 @@
     }
     .tarjeta_productos {
         padding: 3vw;
+    }
+
+    .boton_agenda{
+        margin-top: 5vh;
+
+        button:hover {
+            background-color: #cf7fe7;
+            transform: scale(1.05);
+        }
+    
+        button:active {
+            background-color: #7b3292;
+            transform: scale(0.95);
+        }
     }
 }
 

@@ -41,7 +41,7 @@ nav {
   z-index: 1000;
   border-bottom: #d7ace4;
   align-items: center;
-  height: 7vh;
+  height: 8vh;
 }
 
 .lista_nav {
@@ -123,8 +123,9 @@ main {
 }
 
 .logo_principal img {
-  max-width: 6vh;
+  max-width: 7vh;
   margin-left: 0.5vh;
+  margin-bottom: 0.5vh;
   display: block;
 }
 
@@ -134,7 +135,7 @@ main {
 
 #servicios {
   background-color: rgba(224, 170, 241, 0.2941176471);
-  padding-top: 10vh;
+  padding: 10vh;
   border-radius: 10px;
 }
 
@@ -198,9 +199,7 @@ main {
   height: auto;
   border-radius: 7vh;
   max-height: 50vh;
-  max-width: 40vh;
   object-fit: cover;
-  margin-bottom: 5vh;
 }
 
 .precio {
@@ -220,12 +219,14 @@ main {
 #list-item-1, #list-item-2, #list-item-3, #list-item-4 {
   background-color: rgba(223, 239, 212, 0.9921568627);
   border-radius: 2vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 2vh;
   margin-bottom: 2vh;
 }
 #list-item-1 img, #list-item-2 img, #list-item-3 img, #list-item-4 img {
-  box-shadow: 10px 10px 20px #d7ace4;
+  box-shadow: 0 5px 10px #d7ace4;
+}
+#list-item-1 h2, #list-item-2 h2, #list-item-3 h2, #list-item-4 h2 {
+  margin-bottom: 0;
 }
 
 .agenda {
@@ -240,8 +241,11 @@ main {
 }
 .agenda iframe {
   width: 80vw;
-  height: 80vh;
+  height: 75vh;
   background-color: #eee2f2;
+}
+.agenda h2 {
+  align-self: flex-end;
 }
 
 .agenda, .contacto, .productos {
@@ -332,7 +336,7 @@ main {
   border-radius: 1vh;
   transition: 0.5s;
   color: #212020;
-  font-size: 1.7vh;
+  font-size: 2vh;
 }
 .info_productos:hover {
   transform: scale(1.05);
@@ -348,6 +352,33 @@ main {
 
 .dropdown-item:hover {
   transform: scale(0.97);
+}
+
+.accordion-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vh;
+  justify-items: center;
+}
+.accordion-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.accordion-info p {
+  text-align: left;
+}
+.accordion-info button {
+  align-self: flex-end;
+}
+.accordion-info button:hover {
+  background-color: #cf7fe7;
+  transform: scale(1.02);
+}
+.accordion-info button:active {
+  background-color: #7b3292;
+  transform: scale(0.95);
 }
 
 body {
@@ -379,7 +410,7 @@ body {
   }
   .sobre_mi {
     height: auto;
-    margin-top: 7vh;
+    margin-top: 10vh;
     margin-bottom: 2vh;
     justify-content: center;
   }
@@ -390,7 +421,7 @@ body {
     max-height: 70vh;
   }
   .agenda h2 {
-    padding-top: 6vh;
+    padding-bottom: 4vh;
   }
   .contacto_redes img {
     min-width: 10vw;
@@ -405,6 +436,17 @@ body {
   }
   .tarjeta_productos {
     padding: 3vw;
+  }
+  .boton_agenda {
+    margin-top: 5vh;
+  }
+  .boton_agenda button:hover {
+    background-color: #cf7fe7;
+    transform: scale(1.05);
+  }
+  .boton_agenda button:active {
+    background-color: #7b3292;
+    transform: scale(0.95);
   }
 }
 @media (max-width: 850px) {
