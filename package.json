@@ -15,5 +15,8 @@
     "url": "https://github.com/maximiliano836/coderhouse/issues"
   },
   "homepage": "https://github.com/maximiliano836/coderhouse#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.2.0"
+  }
 }
